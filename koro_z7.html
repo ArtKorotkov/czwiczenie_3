@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        p{
+            p{font-family: Arial;}
+        }
+    </style>
+</head>
+<body>
+    
+    <ol type="1">
+        <li>
+            <b>Na co pozwala styl lokalny, który element będzie formatowany z użyciem stylu 
+                lokalnego,</b><br>
+            <p><b>Styl</b> lokalny pozwala na nadanie formatowania konkretnemu pojedynczemu elementowi <br>
+                strony. Jest wstawiany w tej samej linii, w której znajduje się element formatowany. <br>
+                O tym, który to będzie element, decyduje słowo kluczowe "selektor"</p>
+        </li>
+        <li>
+            <b>Składnia teoretyczna ( z użyciem ramki otaczającej→ może być tabela  o jednej <br>
+                komórce, zastosuj „znaki specjalne” do napisania definicji stylu lokalnego tak aby <br>
+                instrukcja CSS nie wykonywała się a tylko wyświetlała  wewnątrz ramki [&nbsp;   <br>
+                spacja niełamana]← przykład „znaku specjalnego”),</b> <br>
+            <p>Składnia teoretyczna:</p> <br>
+            <textarea cols="70" rows="3">  
+<selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+            </textarea> <br>
+            <p>lub inaczej</p> <br>
+            <textarea cols="60" rows="3">
+<selektor style="nasze style">treść bloku</selektor>
+            </textarea>
+        </li>
+        <li>
+            <b>Co może być selektorem, </b> <br>
+            <p><b>Selektorem</b> może być praktycznie dowolny znacznik, np. p (akapit), h1 (nagłówek), td <br>
+                (komórka tabeli) i inne. To właśnie elementom znajdującym się pomiędzy tymi znacznikami, <br>
+                nadajemy atrybuty formatowania.</p>
+        </li>
+        <li>
+            <b>Co wipisujemy jako "cechę". Jakie jest znaczenie średników, </b> <br>
+            <p>Jako <b>"cecha"</b> czy inaczej własność bądź właściwość (ang. "property") należy wpisać o jakie <br>
+                konkretnie atrybuty formatowania nam chodzi (np. kolor tekstu - color). <br>
+                Jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy rozdzielone <br>
+                średnikami.</p>
+        </li>
+        <li>
+            <b>Co wipisujemy jako "wartość" (w deklaracji stylu). </b> <br>
+            <p>Jako wyraz <b>"wartość"</b> (w deklaracji stylu) wpisujemy dokładną wartość atrybutu (np. dla <br>
+                koloru tekstu będzie to: red, blue czy też #31F4A5 itd.). Wartość zależy ściśle od cechy, po <br>
+                której stoi w deklaracji. </p>
+        </li>
+    </ol>
+</body>
+</html>
