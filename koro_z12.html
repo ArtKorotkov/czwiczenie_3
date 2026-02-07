@@ -3,39 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Korotkov Z12_Html</title>
     <style>
-        ul{font-family: Arial;}
+        
+        table{
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        th{
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .title{
+            
+            text-decoration: underline;
+            font-size: 30px;
+            margin: 0%;
+        }
+        .line{
+            font-size: 25px;
+            margin: 0%;
+            text-decoration: underline;
+        
+        }
+        .bold{
+            text-decoration: underline;
+        }
+        
     </style>
 
 </head>
 <body>
-    <ol type="1">
-        <li>
-            <b>Jednostki bezwzględne</b>
-            <ul>
-                <li>px – piksele</li>
-                <li>cm – centymetry</li>
-                <li>mm – milimetry</li>
-                <li>in – cale</li>
-            </ul>
-        </li>
-        <li>
-            <b>Jednostki względne</b>
-            <ul>
-                <li>% – procenty</li>
-                <li>em – względem rozmiaru czcionki</li>
-                <li>rem – względem elementu <html></html></li>
-                <li>vw, vh – procent szerokości / wysokości okna</li>
-            </ul>
-        </li>
-        <li>
-            <b>Jednostki czasu</b>
-            <ul>
-                <li>s – sekundy</li>
-                <li>ms – milisekundy</li>
-            </ul>
-        </li>
-    </ol>
-</body>
+<table>
+    <tbody>
+        <tr>
+            <th><h1>Jednostki miar.</h1></th>
+        </tr>
+
+        <tr>
+            <td>
+                <h1 class="title">Zastosowanie:</h1><br>
+                <h1 class="line">Jednostki bezwzględne</h1> (np. cm, mm, in, pt) są używane, gdy zależy Ci na dokładnych wymiarach na wydruku, niezależnie od rozdzielczości urządzenia (ekranu).
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h1 class="line">Jednostki miar bezwzględnych w CSS</h1><br>
+                px (piksel): Najczęściej używana jednostka na ekranie, 1px = 1/96 cala.<br>
+                cm (centymetr): 1 cal = 2.54 cm = 96px.<br>
+                mm (milimetr): 1 mm = 1/10 cm.<br>
+                in (cal): 1 cal = 2.54 cm = 96px.<br>
+                pt (punkt): 1 punkt = 1/72 cala (często w typografii).<br>
+                pc (pica): 1 pica = 12 punktów.<br>
+                Q (ćwierć milimetra): 1Q = 1/40 cm (nowa jednostka w CSS3).
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h1 class="title">Zastosowanie:</h1><br>
+                <h1 class="line">Jednostki miar względnych w CSS</h1><br>
+                a) Responsywność: elastyczne dopasowanie do ekranów.<br>
+                b) Skalowalność: rem i em ułatwiają zmianę rozmiaru całej strony.<br>
+                c) Układ: vw, vh, vmin, vmax reagują na rozmiar okna.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+            <h1 class="title">Jednostki miar względnych w CSS</h1><br><br>
+
+                <span class="bold">a) Jednostki względem rozmiaru czcionki</span><br>
+                    em – względem czcionki elementu lub rodzica.<br>
+                    rem – względem czcionki elementu &lt;html&gt;.<br>
+                    ex – wysokość litery „x”.<br>
+                    ch – szerokość cyfry „0”.<br><br>
+
+                <span class="bold">b) Jednostki względem okna przeglądarki</span><br>
+                    vw – 1% szerokości okna.<br>
+                    vh – 1% wysokości okna.<br>
+                    vmin – 1% mniejszego wymiaru okna.<br>
+                    vmax – 1% większego wymiaru okna.<br><br>
+
+                <span class="bold">c) Inne jednostki względne</span><br>
+                    % – względem rozmiaru kontenera.    
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!--  Korotkov Z12_html  -->
+</body> 
 </html>

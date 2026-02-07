@@ -1,17 +1,10 @@
 body{
-    color: blue;
-    font-size: 28mm;
+    color: navy;
+    font-size: 15mm;
 }
 
 p{
-    color: green;
+    color: purple;
     font-size: 18mm;
 }
-h1{
-    color: red;
-    font-size: 7mm;
-}
-h2{
-    color: silver;
-    font-size: 6mm;
-}
+/* Korotkov Z13_html */
