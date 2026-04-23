@@ -1,0 +1,53 @@
+ body{
+ background-color: rgb(0, 184, 197);
+ text-align : center;
+ margin : 50px;
+}
+div{
+    margin: auto;
+}
+
+#b1{
+    background : rgb(100,128,255);
+    width : 400px;
+    border : 3px black solid;
+    border-top-style:  dotted;
+    border-right-style: groove;
+    border-bottom-style: ridge;
+    border-left-style: dashed;
+}
+
+h1 {
+ margin : 20px;
+ border : 1px solid black;
+ background : rgb(255,255,0);
+}
+
+#b2{
+    background : rgb(38, 62, 171);
+    width : 400px;
+    border : 6px solid;
+    border-top-color: red;
+    border-right-color: pink;
+    border-bottom-color: green;
+    border-left-color: aqua;
+}
+
+h2 {
+ margin : 20px;
+ border : 2px solid black;
+ background : rgb(156, 156, 1);
+}
+
+#b3{
+    background : rgb(3, 22, 110);
+    width : 400px;
+    border : 9px black solid;
+}
+
+h3   {
+ margin : 20px;
+ border : 3px solid black;  
+ background : rgb(99, 99, 0);
+} 
+/* Artem Korotkov */  
