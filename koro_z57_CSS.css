@@ -1,0 +1,16 @@
+*{
+    font-size: 35pt;
+    color: blue;
+    background-color: yellow;
+}
+p.korotkov_nieuniwersalny{
+    font-size: 33pt;
+    color: purple;
+}
+.korotkov_uniwersalny{
+    font-size: 31pt;
+    color: black;
+}
+
+
+/* Korotkov Z57_CSS */
