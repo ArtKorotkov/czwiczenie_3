@@ -1,0 +1,36 @@
+div#pierwszy_korotkov{
+    margin: 0 auto;
+    background-color: lightgreen;
+    width: 740pt;
+    border: 3px;
+    border-radius: 12mm;
+    border-color: black;
+    border-style: solid;
+}
+p{
+    font-size: 10pt;
+}
+p:first-child{
+    font-size: 9mm;
+    font-style: italic;
+}
+
+div#drugi_korotkov{
+    margin: 0 auto;
+    background-color: lightblue;
+    width: 940pt;
+    border: 5px;
+    border-radius: 15mm;
+    border-color: navy;
+    border-style: solid;
+}
+
+div#trzeci_korotkov{
+    background-color: pink;
+    width: 1140pt;
+    border: 7px;
+    border-radius: 18mm;
+    border-color: purple;
+    border-style: solid;
+}
+/* Korotkov Z65_css */
