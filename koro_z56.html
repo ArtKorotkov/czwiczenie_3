@@ -36,7 +36,26 @@
                 td --> komórka tabeli i inne.</p>
         </li>
         <li>
-
+            <h1><b><u>Uwagi na temat nazwy klas</u></b></h1>
+            <ul type="disc">
+                <li>
+                    <p>Jako klasa należy podać dowolny pojedynczy wyraz, który nie może zawierać
+                        znaków: spacji, kropki, przecinka, dwukropka, pytajnika, nawiasów, znaku równości,
+                        plusa itp. </p>
+                </li>
+                <li>
+                    <p>Może natomiast zawierać litery (A-Z, a-z), cyfry (0-9), myślniki ("-") i podkreślniki
+                        ("_"). Lepiej nie używać polskich liter. </p>
+                </li>
+                <li>
+                    <p>Nie może się on również rozpoczynać cyfrą ani myślnikiem.</p>
+                </li>
+                <li>
+                    <p>Jeśli koniecznie chcemy użyć "zakazanych" znaków, należy w deklaracji klasy
+                        poprzedzić je odwróconym ukośnikiem "\", np. reguła: selektor.B\&W\? { cecha:
+                        wartość } odpowiada klasie: class="B&W?".</p>
+                </li>
+            </ul>
         </li>
         <li>
             <h1>Jakie jest zastosowanie klas?</h1>
@@ -104,6 +123,100 @@
             Twoim arkuszu stylów może znaleźć się tyle klas, że zapomnisz, do jakich elementów <br>
             się one odnosiły. Wtedy właśnie bardzo przydatny może się okazać wpisany wcześniej <br>
             komentarz.</p>
+        </li>
+        <li>
+            <h1>Podaj konkretny przykład definiowania klasy oraz jej użycia(wywołanie)</h1>
+            <p>Przykład definiowania i wywołania klasy: <br>
+                <u>definicja arkusza styli</u> <br>
+                p.przyklad_klasa { color: red } <br>
+                <u>wywołanie klasy</u> <br>
+                < p class="przyklad_klasa">To jest akapit.< /p>
+            </p>
+        </li>
+        <li>
+            <h1>Omów <u>klasę donosząca się tylko do jednego selektora</u> wraz z przykładem.</h1>
+            <p>
+                <b><u>Klasa donosząca się tylko do jednego selektora inaczej NIEUNIWERSALNA</u></b> <br>
+                Podobnie jak w przypadku identyfikatora, tak zdefiniowana <b><u>klasa może zostać użyta tylko w <br>
+                tym selektorze, do którego została przypisana</u></b>, np.: <br><br>
+
+                <b><u>Przykład1</u></b> <br>
+                <b><u>Temat przykładu:</u> <br>
+                zdefiniowanie oraz użycie klasy NIEUNIWERSALNEJ dla znacznika < p></b><br><br>
+                Definicja arkusza styli <br>
+                p.moja <br>
+                { <br>
+                color:green; <br>
+                font-size:14pt; <br>
+                } <br><br>
+
+                Wywołanie (fragment kodu html) <br>
+                Powinna zostać wywołana w znaczniku < p>< /p> w następujący sposób: <br>
+                < p class=”moja”>Treść akapitu< /p><br><br>
+
+                <b><u>Przykład2</u></b><br>
+                Plik *.CSS <br>
+                p.przyklad_klasa { color: red } <br>
+                Fragment kodu HTML -> wywołanie klasy <br>
+                < p class="przyklad_klasa">To jest akapit.< /p>
+            </p>
+        </li>
+        <li>
+            <h1>Jaki jest cel stosowania <u>klasy uniwersalnej</u>. Jakie jest znaczenie znaku „*” oraz kiedy
+                można nie stosować tego znaku. Podaj przykład (definicja, wywołanie).</h1>
+            <p>
+                <b><u>2)Klasa uniwersalna</u></b>
+                W przypadku stosowanie klas, często podczas ich definiowania, nie wiemy jeszcze, w
+                stosunku do jakich znaczników będziemy chcieli je później użyć. Wtedy przydatny okazuje
+                się selektor uniwersalny, który pozwala przypisać własności klasy do wszystkich elementów,
+                którym zostanie ona nadana, bez względu na typ znacznika czyli <b>użycie jest możliwe w
+                różnych znacznikach.</b>
+
+                <b><u>Przykład1</u></b>
+                <u>definicja arkusza styli <b>z gwiazdką</b> dla klasy uniwersalnej</u> <br>
+                *.przyklad_uniwersalna { color: red } <br>
+                Każdy element, któremu nadamy klasę <b>przyklad_uniwersalna</b>, będzie miał kolor czerwony. <br>
+                <u>definicja arkusza styli <b>bez gwiazdki</b> dla klasy uniwersalnej</u> <br>
+                .przyklad_uniwersalna  font-size:12 pt; color: red <br><br>
+
+                <b><u>Przykład2</u></b><br>
+                <u>definicja arkusza styli</u> <br>
+                .moja <br>
+                { <br>
+                color:red; <br>
+                font-size:12pt; <br> 
+                font-style:italic; <br>
+                } <br><br>
+
+                <u>wywołanie</u>
+                <b>Wywołanie</b> klasy tak określonej klasy również odbywa się za pomocą atrybutu class. <br>
+                <   p class=”moja”>Przykład akapitu z określoną klasą< /p> <br>
+                <   ol class=”moja”> <br>
+                <   h1 class=”moja”>Przykład nagłówka z określoną klasą< /h1> <br><br>
+
+                <b><u>Przykład3</u></b><br>
+                <u>Kod arkusza CSS</u> <br>
+                p <br>
+                { <br>
+                font-size:14pt; <br>
+                color:green; <br>
+                } <br>
+                .moja <br>
+                { <br>
+                font-style:italic; <br>
+                font-size:20pt; <br>
+                color:red; <br>
+                } <br><br>
+
+                <u>Kod fragmentu HTML</u> <br>
+                < p>Blok tekstu o kolorze zielonym i czcionce 14pt< /p> <br>
+                < p class="moja">Blok tekstu, w którym użyłem klasy o nazwie .moja< /p> <br>
+                < p>Blok tekstu o kolorze zielonym i czcionce 14pt< /p> <br>
+                < ol class="moja"> <br>
+                &nbsp;&nbsp;< li>lista, w której użyłem klasy o nazwie .moja< /li> <br>
+                &nbsp;&nbsp;< li>lista, w której użyłem klasy o nazwie .moja< /li> <br>
+                < /ol>
+            </p>
         </li>
         
     </ol>
